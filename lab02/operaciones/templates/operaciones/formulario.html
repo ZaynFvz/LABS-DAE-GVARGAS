@@ -1,0 +1,15 @@
+<h2>{{ titulo }}</h2>
+<form action="resolver" method="post">
+    {% csrf_token %}
+    Ingrese su primer número:
+    <input type="text" name="numero1"><br>
+    Ingrese su segundo número:
+    <input type="text" name="numero2"><br>
+    Elija la operación a realizar:
+    <select name="oprc">
+        <option value="suma">Suma</option>
+        <option value="resta">Resta</option>
+        <option value="multiplicacion">Multiplicación</option>
+    </select><br>
+    <input type="submit" name="submit" value="Mostrar Resultado">
+</form>

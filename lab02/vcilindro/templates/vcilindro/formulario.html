@@ -1,0 +1,9 @@
+<h2>{{ titulo }}</h2>
+<form action="calcular" method="post">
+    {% csrf_token %}
+    Ingrese el diametro en metros:
+    <input type="text" name="diametro"><br>
+    Ingrese la altura en metros:
+    <input type="text" name="altura"><br>
+    <input type="submit" name="submit" name="Calcular">
+</form>
